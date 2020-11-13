@@ -1,0 +1,31 @@
+
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, la cantidad que se requiere y el precio unitario. Si la cantidad pedida excede de 50 unidades, se hace un descuento de 15%.
+
+1. Inicio
+
+2. (descripcion_articulo, x(30)[{a-z],{BS},{a-z}])
+3. cantidad_pedida, d[0, n]
+4. precio_unitario, d[0, n]
+5. costo_pedido_articulo, d[0, n]
+6. descuento, d[0, n]
+7. porcentaje, d[0, n]
+8. porcentaje <-- 15
+
+9. Escribir "Ingresar la descripción del articulo"
+10. Leer descripcion_articulo
+11. Escribir "Ingresar la cantidad que se requiere"
+12. Leer cantidad_pedida
+13. Escribir "Ingresar el precio unitario del articulo"
+14. Leer precio_unitario
+
+15. costo_pedido_articulo <-- cantidad_requerida * precio_unitario
+
+16. Si cantidad_pedida > 50 entonces
+17. descuento <-- (porcentaje * costo_pedido_articulo)/100
+18. costo_pedido_articulo <-- costo_pedido_articulo - descuento
+19. Fin si
+20. Escribir <-- "El costo de un pedido de un articulo es: "+ costo_pedido_articulo
+
+21. Fin
+
+

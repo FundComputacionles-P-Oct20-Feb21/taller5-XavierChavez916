@@ -1,0 +1,60 @@
+
+
+En una hostería de la ciudad de Loja se hace un descuento del 10% si el cliente se hospeda más de 5 días, del 15% si se hospeda más de 10 días y del 20% si se hospeda más de 15 días. Elaborar un solución que pida como datos de entrada el número de días y el precio diario de la habitación y luego calcule e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+
+1. Inicio
+
+2. numero_dias, i[0, n]
+3. precio_diario_habitacion, d[0, n]
+4. total_pagar, d[0, n]
+5. descuento1, d[0,n]
+6. descuento1 <-- 10
+7. descuento2, d[0, n]
+8. descuento2 <-- 15
+9. descuento3, d[0, n]
+10. descuento3 <-- 20
+11. subtotal, d[0, n]
+11. subtotal <-- 1.12
+
+12. Escribir "Ingrese el numero de días que se va a hospedar en la hostería"
+13. Leer numero_dias
+14. Escribir "Ingrese el precio diario de la habitación de la hostería"
+15. Leer precio_diario_habitacion
+
+16. total_pagar <-- numero_dias * precio_diario_habitacion
+17. subtotal <--  total_pagar / 1.12
+
+
+18. Si numero_dias >= 15 entonces
+19. descuento3 <-- numero_dias * descuento3/100
+20. total_pagar <-- total_pagar - descuento3
+21. subtotal <--  total_pagar / 1.12
+22. Escribir "El subtotal a pagar es "+ total_pagar
+23. Escribir "El descuento es: "+ descuento3
+24. Escribir "El total a pagar es "+ total_pagar
+
+25. De lo contrario 
+26. Si numero_dias >= 10 entonces
+27. descuento2 <-- numero_dias * descuento2/100
+28. total_pagar <-- total_pagar - descuento2
+29. subtotal <--  total_pagar / 1.12
+30. Escribir "El subtotal a pagar es "+ total_pagar
+31. Escribir "El descuento es "+ descuento2
+32. Escribir "El total a pagar es "+ total_pagar
+33. De lo contrario
+34. Si numero_dias >= 5 entonces
+35. descuento1 <-- numero_dias * descuento1/100
+36. total_pagar <-- total_pagar - descuento1
+37. subtotal <--  total_pagar / 1.12
+38. Escribir "El subtotal a pagar es "+ total_pagar
+39. Escribir "El descuento es: "+descuento1
+40. Escribir "El total a pagar es: " + total_pagar
+41. Fin si
+42. Fin si
+43. Escribir "El subtotal a pagar es "+ total_pagar
+44. Escribir "El total a pagar es: "+ total_pagar
+45. Fin
+
+
+
